@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: C# Continuous Integration
 on:
   push:
     branches: 'main'
