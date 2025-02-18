@@ -1,0 +1,16 @@
+name: Continuous Integration
+on:
+  push:
+    branches: 'main'
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Dotnet Build
+      run: dotnet build
+    - name: Dotnet Test
+      run: dotnet test
