@@ -17,4 +17,4 @@ jobs:
     - name: TypeScript Tests
       run: cd DotnetTemplate.Web && npm t
     - name: Lint
-      run: npm run lint
+      run: cd DotnetTemplate.Web && npm run lint
