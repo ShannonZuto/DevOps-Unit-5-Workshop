@@ -13,7 +13,7 @@ jobs:
     - name: npm install
       run: cd DotnetTemplate.Web && npm install
     - name: Dotnet Test
-      run: cd .. && dotnet test
+      run: dotnet test
     - name: TypeScript Tests
       run: cd DotnetTemplate.Web && npm t
     - name: Lint
