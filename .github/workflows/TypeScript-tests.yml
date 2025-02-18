@@ -10,12 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Dotnet Build
-      run: dotnet build
     - name: npm install
       run: cd DotnetTemplate.Web && npm install
-    - name: Dotnet Test
-      run: dotnet test
     - name: TypeScript Tests
       run: cd DotnetTemplate.Web && npm t
     - name: Lint
