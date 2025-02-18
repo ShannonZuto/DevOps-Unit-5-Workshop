@@ -18,3 +18,5 @@ jobs:
       run: cd DotnetTemplate.Web && npm t
     - name: Lint
       run: cd DotnetTemplate.Web && npm run lint
+    - name: Run
+      run: cd DotnetTemplate.Web && dotnet run
